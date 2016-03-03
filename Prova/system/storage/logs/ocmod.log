@@ -1,0 +1,69 @@
+2016-02-29 15:23:08 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Parent-child Options
+FILE: admin/language/english/catalog/product.php
+CODE: $_['heading_title']
+LINE: 14
+FILE: admin/language/italian/catalog/product.php
+CODE: $_['heading_title']
+LINE: 14
+FILE: admin/controller/catalog/product.php
+CODE: function getForm() {
+LINE: 538
+CODE: $data['product_options'][] = array(
+LINE: 1150
+FILE: admin/model/catalog/product.php
+CODE: function getProductOptions($product_id) {
+LINE: 668
+CODE: $product_option_data[] = array(
+LINE: 658
+LINE: 707
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "product_option SET
+LINE: 48
+LINE: 68
+LINE: 202
+LINE: 222
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 1600
+CODE: $('#tab-option .tab-content').append(html);
+LINE: 1234
+FILE: catalog/controller/product/product.php
+CODE: 'product_option_id'    => $option['product_option_id'],
+LINE: 369
+CODE: $data['product_id'] =
+LINE: 274
+FILE: catalog/model/catalog/product.php
+CODE: public function getProduct($product_id) {
+LINE: 95
+CODE: 'product_option_id'    => $product_option['product_option_id'],
+LINE: 446
+FILE: catalog/view/theme/ancart/template/product/product.tpl
+CODE: <?php echo $footer;
+LINE: 790
+FILE: catalog/view/theme/basecart/template/product/product.tpl
+CODE: <?php echo $footer;
+LINE: 795
+FILE: catalog/view/theme/default/template/product/product.tpl
+CODE: <?php echo $footer;
+LINE: 783
+FILE: catalog/controller/checkout/cart.php
+CODE: $product_options = $this->model_catalog_product->getProductOptions($this->request->post['product_id']);
+LINE: 329
+----------------------------------------------------------------
