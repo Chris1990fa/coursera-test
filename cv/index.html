@@ -4,6 +4,8 @@
     <head>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="dreamcodes/social_icons/tsc_social_icons.css" />
+
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
@@ -14,47 +16,64 @@
 
 
 
-    <body class="#2196f3 blue">
+    <body class="#00b8d4 cyan accent-4">
       <!--Import jQuery before materialize.js-->
-        <div class="container">
+        
         <div class="col s12">
 
-        <div class="card z-depth-3">
+        <div class="card z-depth-2">
           <div class="card-content center-align">
               <img src="1.jpg" alt="" class="circle responsive-img" style="width:400px;height:auto;"><br> <!-- notice the "circle" class -->
-              <span class="card-title">Fabrizio Pezzella<br>
-              Via Don Luigi Sturzo 4, 80025 Casandrino<br>
-              fabri.pezzella@gmail.com<br>
-              +39 345 123 1691<br>
-              10/10/1990</span>
+              <span class="card-title"><i class="small material-icons">person_pin</i>Fabrizio Pezzella<br>
+              <i class="small material-icons">location_on</i> Via L. Sturzo 4, 80025 Casandrino<br>
+              <i class="small material-icons">email</i> fabri.pezzella@gmail.com<br>
+              <i class="small material-icons">phone</i> +39 345 123 1691<br>
+              10/10/1990<br>
+              <img src="2.png" alt="" class="circle responsive-img" style="width:40px;height:auto;">
+              </span>
           </div>
         </div>
       </div>
 
+
         <div class="col s12">
         
-          <div class="card z-depth-3">
+          <div class="card z-depth-2">
 
             <div class="card-content">
             <ul class="tabs">
-              <li class="tab"><a class="active" href="#test1">Italian</a></li>
+              <li class="tab grey-text"><a class="active" href="#test1">Italiano</a></li>
                 <li class="tab"><a class="disabled" href="#test2">English</a></li></ul>
                 
 
 <!--ITALIANO_________________________________________________________________-->
                 
-                <div id="test1">
-                  <span class="card-title">Italiano</span>
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                <div id="test1" class="center-align">
+                  <br><h3 class="green-text">Istruzione</h3>
+                  <p><h4>Tecnico dei servizi di ristorazione<br>2005-2010</h4>
+							<h5>I.P.P.S.A.R.T. "Don Bosco", Frattamaggiore (Italia)
+<br>Identificare situazioni di rischio potenziale per la sicurezza, la salute e l'ambiente nel luogo di lavoro, promuovendo l'assunzione di comportamenti corretti e consapevoli di prevenzione
+<br>Definire le esigenze di acquisto, individuando i fornitori e gestendo il processo di approvvigionamento
+<br>Formulare proposte di prodotti/servizi, interpretando i bisogni e promuovendo la fidelizzazione del cliente
+<br>Predisporre menu' in riferimento alle caratteristiche organolettiche e merceologiche delle materie prime ed alla tipicita' del prodotto
+<br>Curare l'elaborazione dei piatti, con applicazione di tecniche innovative e creative</h5><hr>
+<h4>Universita' di Napoli Federico II<br>Scienze Informatiche<br>2014 - in corso</h4>
+<h5>
+<br>Esami effettuati con esito positivo:
+<br>Analisi Matematica I; 
+<br>Fisica I;
+<br>Geometria;
+<br>Programmazione I;
+<br>Programmazione II;
+<br>Inglese.
+</h5><hr>
+
+&nbsp;</h5></p>
                 </div>
 <!--INGLESE__________________________________________________________________-->
 
                 <div id="test2">
-                  <span class="card-title">Inglese</span>
+                  <span class="card-title">Personal Experience</span>
                     <p>Italiano cooos</p>
                 </div>
             
@@ -63,7 +82,6 @@
             </div>
             
             </div><!--End Col card-->
-        </div>
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
